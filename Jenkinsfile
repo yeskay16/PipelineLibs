@@ -6,10 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                build(
-                    branch: 'feature/test',
-                    dockerImage: 'maven:3.8'
-                )
+                build()
             }
         }
         
